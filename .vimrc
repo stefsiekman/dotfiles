@@ -67,3 +67,6 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+" Executing commands, reads result to buffer
+noremap Q !!sh<cr>
