@@ -53,6 +53,8 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+set wildmenu
+
 " Tree View
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
