@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,7 +41,7 @@ set colorcolumn=80,100
 
 syntax enable
 
-colorscheme monokai
+colorscheme stefan
 set background=dark
 
 set number
@@ -61,14 +62,11 @@ let g:netrw_banner = 0
 let g:netrw_winsize = 75
 let g:netrw_altv = 1
 
-" Auto Brackets
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
-
 " Executing commands, reads result to buffer
 noremap Q !!sh<cr>
+
+let mapleader = " "
+nnoremap <leader>t :e **/*
+nnoremap <leader>s :vs **/*
+
+imap jk <Esc>
