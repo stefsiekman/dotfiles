@@ -41,7 +41,7 @@ set colorcolumn=80,100
 
 syntax enable
 
-colorscheme stefan
+colorscheme 256-jungle
 set background=dark
 
 set number
