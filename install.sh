@@ -7,9 +7,8 @@ function copy_dotfile() {
     fi
 }
 
-# Install the .vimrc
 copy_dotfile vimrc
-
+copy_dotfile tmux.conf
 
 # Only do WM stuff on macOS, requires chunkwm
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -19,5 +18,3 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 else
     echo "Not on macOS, skipping WM"
 fi
-
-echo "Done!"
