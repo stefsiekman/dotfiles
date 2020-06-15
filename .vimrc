@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'jwalton512/vim-blade'
 
@@ -74,5 +74,9 @@ noremap Q !!sh<cr>
 let mapleader = " "
 nnoremap <leader>t :e **/*
 nnoremap <leader>s :vs **/*
+
+map <C-n> :NERDTreeToggle<CR>
+
+let g:airline_powerline_fonts = 1
 
 imap jk <Esc>
