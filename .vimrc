@@ -33,7 +33,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|vendor\|lib'
 
 set hlsearch
 
